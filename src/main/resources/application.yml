@@ -1,0 +1,2 @@
+spring:  application:    name: aws-lambda-connect-sns
+aws:  credentials:    access-key: ${ACCESS_KEY}    secret-key: ${SECRET_KEY}    region: ${REGION}  services:    auto-configuration-enabled: true    s3:      enabled: false    rds:      enabled: false    sns:      enabled: false      sqs:      enabled: true      queue-url: ${QUEUE_URL}
